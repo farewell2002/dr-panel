@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Подсказки</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f6f6f6;margin:0;
+display:flex;min-height:100vh;align-items:center;justify-content:center}
+form{background:#fff;padding:24px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.08);
+width:min(320px,90vw)}
+h1{font-size:18px;margin:0 0 12px}p{font-size:14px;color:#555;margin:0 0 12px}
+input[type=password]{width:100%;box-sizing:border-box;font-size:16px;padding:10px;
+border:1px solid #ccc;border-radius:8px}
+label{display:block;font-size:14px;margin:10px 0}
+button{width:100%;font-size:16px;padding:10px;border:0;border-radius:8px;background:#2b6cb0;color:#fff}
+#err{color:#c53030;font-size:14px;min-height:18px;margin-top:8px}
+</style></head><body>
+<form id="f"><h1>Подсказки по постам</h1>
+<p>Введите пароль. Его дал вам Иван.</p>
+<input id="p" type="password" autocomplete="current-password" required>
+<label><input id="r" type="checkbox" checked> Запомнить на этом телефоне</label>
+<button type="submit">Открыть</button><div id="err"></div></form>
+<script id="blob" type="application/json">{"s": "ZX4YmypZxCVPtvZLb71b6A==", "i": "SRRNUviGcRW0KPl9", "c": "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", "n": 310000}</script>
+<script>
+(function(){
+var B=JSON.parse(document.getElementById('blob').textContent);
+function u8(s){return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)});}
+async function open(pw){
+  var base=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveKey']);
+  var key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:u8(B.s),iterations:B.n,hash:'SHA-256'},
+    base,{name:'AES-GCM',length:256},false,['decrypt']);
+  var plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:u8(B.i)},key,u8(B.c));
+  var text=new TextDecoder().decode(plain);
+  document.open();document.write(text);document.close();
+}
+var KEY='smm-page-pw';
+var saved=null;try{saved=localStorage.getItem(KEY);}catch(e){}
+if(saved){open(saved).catch(function(){try{localStorage.removeItem(KEY);}catch(e){}});}
+document.getElementById('f').addEventListener('submit',function(ev){
+  ev.preventDefault();var pw=document.getElementById('p').value;
+  open(pw).then(function(){
+    if(document.getElementById('r')&&document.getElementById('r').checked){try{localStorage.setItem(KEY,pw);}catch(e){}}
+  }).catch(function(){document.getElementById('err').textContent='Пароль не подошёл';});
+});
+})();
+</script></body></html>
