@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Онлайн-отдел: разборы чатов</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f6f6f6;margin:0;
+display:flex;min-height:100vh;align-items:center;justify-content:center}
+form{background:#fff;padding:24px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.08);
+width:min(320px,90vw)}
+h1{font-size:18px;margin:0 0 12px}p{font-size:14px;color:#555;margin:0 0 12px}
+input[type=password]{width:100%;box-sizing:border-box;font-size:16px;padding:10px;
+border:1px solid #ccc;border-radius:8px}
+label{display:block;font-size:14px;margin:10px 0}
+button{width:100%;font-size:16px;padding:10px;border:0;border-radius:8px;background:#2b6cb0;color:#fff}
+#err{color:#c53030;font-size:14px;min-height:18px;margin-top:8px}
+</style></head><body>
+<form id="f"><h1>Онлайн-отдел: разборы чатов</h1>
+<p>Введите пароль от странички.</p>
+<input id="p" type="password" autocomplete="current-password" required>
+<label><input id="r" type="checkbox" checked> Запомнить на этом телефоне</label>
+<button type="submit">Открыть</button><div id="err"></div></form>
+<script id="blob" type="application/json">{"s": "jUt5xPvYzI3w32FroGpDGw==", "i": "26InGvL+UdyzC5Y7", "c": "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", "n": 310000}</script>
+<script>
+(function(){
+var B=JSON.parse(document.getElementById('blob').textContent);
+function u8(s){return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)});}
+async function open(pw){
+  var base=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveKey']);
+  var key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:u8(B.s),iterations:B.n,hash:'SHA-256'},
+    base,{name:'AES-GCM',length:256},false,['decrypt']);
+  var plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:u8(B.i)},key,u8(B.c));
+  var text=new TextDecoder().decode(plain);
+  document.open();document.write(text);document.close();
+}
+var KEY='chat-page-pw';
+var saved=null;try{saved=localStorage.getItem(KEY);}catch(e){}
+if(saved){open(saved).catch(function(){try{localStorage.removeItem(KEY);}catch(e){}});}
+document.getElementById('f').addEventListener('submit',function(ev){
+  ev.preventDefault();var pw=document.getElementById('p').value;
+  open(pw).then(function(){
+    if(document.getElementById('r')&&document.getElementById('r').checked){try{localStorage.setItem(KEY,pw);}catch(e){}}
+  }).catch(function(){document.getElementById('err').textContent='Пароль не подошёл';});
+});
+})();
+</script></body></html>
